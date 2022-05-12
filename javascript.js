@@ -7,9 +7,14 @@ function createGrid(col, row) {
     for(j = 0; j < row; j++) {
       let box = document.createElement('div');
       box.classList.add("box");
+      box.addEventListener('mouseover', box => paint(box, 'lime'));
       newCol.appendChild(box);
     }
   }
 };
+
+function paint(item, color) {
+  item.target.style.backgroundColor = color;
+}
 
 createGrid(16, 16);
