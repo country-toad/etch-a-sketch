@@ -4,5 +4,6 @@
 
 .box { 
   padding: 10px;
-  border: 1px solid red;
+  border: 1px solid lightgray;
+  background-color: gray;
 }
