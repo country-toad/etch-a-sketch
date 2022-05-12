@@ -1,7 +1,8 @@
-* {
-  border: 1px solid red;
-}
-
 .grid {
   display: flex;
+}
+
+.box { 
+  padding: 10px;
+  border: 1px solid red;
 }

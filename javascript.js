@@ -4,8 +4,8 @@ for(i=0; i<16; i++) {
   newCol.classList.add("column");
   grid.appendChild(newCol);
   for(j=0; j<16; j++) {
-    let div = document.createElement('div');
-    div.textContent = '*';
-    newCol.appendChild(div);
+    let box = document.createElement('div');
+    box.classList.add("box");
+    newCol.appendChild(box);
   }
 }
