@@ -2,7 +2,6 @@
   display: flex;
   box-sizing: border-box;
   width: 960px;
-  height: 960px;
   border: 1px solid red;
 }
 
@@ -11,6 +10,6 @@
 }
 
 .box { 
-  padding-bottom: 100%;
+  padding-bottom: 100%; /* Keeps height same as width; */
   background-color: gray;
 }

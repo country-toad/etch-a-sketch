@@ -1,4 +1,4 @@
-function createGrid(size) {
+function createGrid(size = 1) {
   if(document.querySelector('.grid')) {
     removeGrid();
   }
@@ -21,9 +21,6 @@ function createGrid(size) {
 function paintBox(item, color) {
   item.target.style.backgroundColor = color;
 }
-
-const sizeButton = document.querySelector('.sizebutton');
-sizeButton.addEventListener('click', getSize);
 
 function getSize() {
   let size = prompt('Set number of pixels per side');
