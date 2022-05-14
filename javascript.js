@@ -40,4 +40,14 @@ function removeGrid() {
   grid.remove();
 }
 
+function createRGBValue() {
+  return Math.floor(Math.random() * 256);
+}
+
+function paintRainbow() {
+  color = `rgb(${createRGBValue()}, ${createRGBValue()}, ${createRGBValue()})`;
+  const boxes = document.querySelectorAll('.box');
+  boxes.forEach(box => box.addEventListener('mouseover', box => paintBox(box, color)));
+}
+
 createGrid();
