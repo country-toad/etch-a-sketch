@@ -3,16 +3,14 @@
   box-sizing: border-box;
   width: 960px;
   height: 960px;
-  border: 6px solid red;
+  border: 1px solid red;
 }
 
 .column {
-  min-width: 0;
-  flex: 1;
+  width: 100%;
 }
 
 .box { 
-  padding: 10px;
-  border: 1px solid lightgray;
+  padding-bottom: 100%;
   background-color: gray;
 }
