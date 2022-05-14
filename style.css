@@ -1,5 +1,14 @@
 .grid {
   display: flex;
+  box-sizing: border-box;
+  width: 960px;
+  height: 960px;
+  border: 6px solid red;
+}
+
+.column {
+  min-width: 0;
+  flex: 1;
 }
 
 .box { 
