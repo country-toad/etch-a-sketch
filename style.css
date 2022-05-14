@@ -2,7 +2,7 @@
   display: flex;
   box-sizing: border-box;
   width: 960px;
-  border: 1px solid red;
+  border: 1px solid black;
 }
 
 .column {
@@ -11,5 +11,5 @@
 
 .box { 
   padding-bottom: 100%; /* Keeps height same as width; */
-  background-color: gray;
+  background-color: lightgray;
 }

@@ -1,4 +1,4 @@
-function createGrid(size = 1) {
+function createGrid(size = 16) {
   if(document.querySelector('.grid')) {
     removeGrid();
   }
@@ -12,17 +12,23 @@ function createGrid(size = 1) {
     for(j = 0; j < size; j++) {
       let box = document.createElement('div');
       box.classList.add('box');
-      box.addEventListener('mouseover', box => paintBox(box, 'purple'));
+      box.addEventListener('mouseover', box => paintBox(box, 'black'));
       column.appendChild(box);
     }
   }
 };
 
+function setColor() {
+  let color = prompt('What color?');
+  const boxes = document.querySelectorAll('.box');
+  boxes.forEach(box => box.addEventListener('mouseover', box => paintBox(box, color)));
+}
+
 function paintBox(item, color) {
   item.target.style.backgroundColor = color;
 }
 
-function getSize() {
+function setSize() {
   let size = prompt('Set number of pixels per side');
   if (size <= 100) { 
     createGrid(size);
