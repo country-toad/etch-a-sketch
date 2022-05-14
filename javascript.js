@@ -1,5 +1,7 @@
 function createGrid(width=16, height=16) {
-  const grid = document.querySelector('.grid');
+  const grid = document.createElement('div');
+  grid.classList.add("grid");
+  document.body.appendChild(grid);
   for(i = 0; i < width; i++) { 
     let column = document.createElement('div');
     column.classList.add("column");
